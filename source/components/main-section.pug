@@ -1,0 +1,29 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-l-regular.font-s-42-a
+        | «NATALYA ROMANOVA» — 
+        br
+        | ваш магазин бижутерии 
+        br
+        | с чистой прибылью от 
+        br
+        span.color-g-light 269 000 рублей ежемесячно
+      .main-section__sub-title.font-s-20-a
+        | Узнайте, как запустить работу бизнеса всего за 1 месяц, 
+        br.no-br
+        | используя минимальные инвестиции
+      .main-section__bottom
+        .main-section__bottom-header
+          img.main-section__bottom-img(src="images/main-section-bottom-img.png" loading="lazy" width="276" height="202" alt="image")
+          span.font-s-20-b
+            | Получите подробную
+            br
+            | презентацию франшизы
+        form.main-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") получить
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="2446" height="1442" alt="image")

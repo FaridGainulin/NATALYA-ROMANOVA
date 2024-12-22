@@ -1,0 +1,164 @@
+.reasons-section
+  // background-image: url('../images/reasons-section-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background-color #fff
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0
+    +above($breakpoints.sm)
+      padding 30px 0
+    +above($breakpoints.md)
+      padding 50px 0
+    +above($breakpoints.xxl)
+      padding 68px 0 82px
+
+  &__img
+    position: absolute
+    width: 123px;
+    height: auto;
+    bottom: 70px;
+    right: -120px;
+    +above($breakpoints.sm)
+      width: 230px;
+      bottom: 113px;
+      right: -253px;
+    +above($breakpoints.md)
+      width: 320px;
+      bottom: 170px;
+      right: -363px;
+    +above($breakpoints.xxl)
+      width 459px
+      bottom: 178px
+      right: -582px
+
+  &__title,
+  &__sub-title
+    text-align: center
+
+  &__sub-title
+    padding: 10px 40px 15px;
+    +above($breakpoints.sm)
+      padding 20px 0 30px
+    +above($breakpoints.md)
+      padding 25px 0 40px
+    +above($breakpoints.xxl)
+      padding 28px 0 52px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: column
+      gap: 6px
+    +above($breakpoints.md)
+      gap: 8px
+    +above($breakpoints.xxl)
+      gap: 10px
+
+  &__card
+    color: #000
+    width 280px !important
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      flex-direction: row
+      width max-content !important
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 15px
+    +above($breakpoints.xxl)
+      gap: 23px
+
+  &__card-icon
+    width 35px
+    height: 35px
+    +above($breakpoints.sm)
+      width 40px
+      height: 40px
+    +above($breakpoints.md)
+      width 48px
+      height: 48px
+    +above($breakpoints.xxl)
+      width 57px
+      height: 57px
+
+  &__bottom
+    width 100%
+    position relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 15px
+    background-image: url('../images/bottom-bg.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    background-color #011D1F
+    border-radius: 10px
+    padding 15px 10px
+    margin-top 20px
+    +above($breakpoints.sm)
+      margin-top 40px
+      flex-direction: row
+      justify-content space-between
+      border-radius: 15px
+      padding 30px 20px
+    +above($breakpoints.md)
+      margin-top 60px
+      border-radius: 20px
+      padding 50px 30px
+    +above($breakpoints.xxl)
+      margin-top 82px
+      border-radius: 30px
+      padding 61px 43px 60px 47px
+      height: 279px
+
+  &__bottom-img
+    position: absolute
+    width: 73px;
+    height: auto;
+    bottom: 143px;
+    left: -26px;
+    +above($breakpoints.sm)
+      width: 170px;
+      bottom: 9px;
+      left: 263px;
+    +above($breakpoints.md)
+      width: 240px;
+      bottom: 13px;
+      left: 353px;
+    +above($breakpoints.xxl)
+      width 291px
+      bottom: 13px
+      left: 448px
+
+  &__bottom-text
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      align-items: flex-start
+      gap: 14px
+    +above($breakpoints.sm)
+      gap: 16px
+    +above($breakpoints.xxl)
+      gap: 18px
+
+  &__btn
+    width 280px !important
+    +above($breakpoints.sm)
+      width 230px !important
+    +above($breakpoints.md)
+      width 280px !important
+    +above($breakpoints.xxl)
+      width 310px !important

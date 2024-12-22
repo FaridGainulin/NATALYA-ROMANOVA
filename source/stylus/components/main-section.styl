@@ -1,0 +1,118 @@
+.main-section
+  background-image: url('../images/main-section-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-color #011D1F
+
+  &__container
+    position relative
+    z-index 1
+    padding 15px 0 10px
+    +above($breakpoints.sm)
+      padding 20px 0 30px
+    +above($breakpoints.md)
+      padding 25px 0 60px
+    +above($breakpoints.xxl)
+      padding 34px 0 99px
+
+  &__title,
+  &__sub-title
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+
+  &__title
+    padding 15px 0
+    +above($breakpoints.sm)
+      padding 20px 0 15px
+    +above($breakpoints.md)
+      padding 30px 0 20px
+    +above($breakpoints.xxl)
+      padding 41px 0 25px
+
+  &__bottom
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    background-color transparent
+    border-radius: 15px
+    border: 1px solid $color-g-light
+    padding 10px 10px 15px
+    margin-top 15px
+    +above($breakpoints.sm)
+      margin-top 20px
+      padding 10px 10px 15px
+      border-radius: 20px
+      gap: 12px
+      width 260px
+    +above($breakpoints.md)
+      margin-top 25px
+      border-radius: 25px
+      gap: 15px
+      width 300px
+    +above($breakpoints.xxl)
+      margin-top 35px
+      border-radius: 30px
+      gap: 18px
+      width 330px
+      height: 399px
+
+  &__bottom-header
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 10px
+    text-align: center
+    +above($breakpoints.sm)
+      flex-direction: column
+      gap: 7px
+    +above($breakpoints.md)
+      gap: 9px
+    +above($breakpoints.xxl)
+      gap: 11px
+
+  &__bottom-img
+    width 64px
+    height: auto
+    +above($breakpoints.sm)
+      width 90px
+    +above($breakpoints.md)
+      width 120px
+    +above($breakpoints.xxl)
+      width 138px
+
+  &__form
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 6px
+    +above($breakpoints.sm)
+      gap: 7px
+    +above($breakpoints.md)
+      gap: 8px
+    +above($breakpoints.xxl)
+      gap: 9px
+
+  &__img
+    width 280px
+    height: auto
+    margin: 15px 0 0 11px;
+    +above($breakpoints.sm)
+      margin 0
+      position: absolute
+      z-index -1
+      width: 630px;
+      left: 246px;
+      bottom: 91px;
+    +above($breakpoints.md)
+      width: 920px;
+      left: 270px;
+      bottom: 93px;
+    +above($breakpoints.xxl)
+      width 1223px
+      left: 328px
+      bottom: 83px

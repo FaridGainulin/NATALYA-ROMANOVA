@@ -1,0 +1,27 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      h2.city-section__title.font-w-l-regular.font-s-42-b
+        | Станьте партнером франшизы 
+        br
+        span.color-g-light «NATALYA ROMANOVA»
+      .city-section__sub-title.font-w-l-regular.font-s-30
+        | и зарабатывайте от 
+        span.color-g-light 3,2 млн 
+        br
+        span.color-g-light чистой прибыли в год
+      .city-section__bottom
+        .city-section__bottom-header
+          img.city-section__bottom-img(src="images/city-section-bottom-img.png" loading="lazy" width="196" height="242" alt="image")
+          span.font-s-20-b
+            | Проверьте, свободен 
+            br.no-br
+            | ли ваш город для работы 
+            br.no-br
+            | с нами
+        form.city-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Проверить
+      img.city-section__img(src="images/city-section-img.png" loading="lazy" width="1686" height="1184" alt="image")

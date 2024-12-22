@@ -1,0 +1,51 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__img(src="images/finances-section-img.png" loading="lazy" width="840" height="1138" alt="image")
+      img.finances-section__img-1(src="images/finances-section-img-1.png" loading="lazy" width="799" height="843" alt="image")
+      img.finances-section__img-2(src="images/finances-section-img-2.png" loading="lazy" width="373" height="1684" alt="image")
+      h2.finances-section__title.font-w-l-regular.font-s-42.text-up
+        | Ключевые показатели 
+        br.no-br
+        | франшизы
+      .swiper-bullet
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            span.font-w-l-regular.font-s-28-a.color-g-light.text-up с 1-го месяца
+            span.font-s-20.color-g-dark Вы начнете <br> зарабатывать
+          .finances-section__card.swiper-slide
+            span.font-w-l-regular.font-s-28-a.color-g-light.text-up 611 000 рублей
+            span.font-s-20.color-g-dark Ежемесячная <br> выручка
+          .finances-section__card.swiper-slide
+            span.font-w-l-regular.font-s-28-a.color-g-light.text-up от 13 продаж
+            span.font-s-20.color-g-dark Будет совершаться <br> ежедневно
+          .finances-section__card.swiper-slide
+            span.font-w-l-regular.font-s-28-a.color-g-light.text-up 44%
+            span.font-s-20.color-g-dark Рентабельность <br> по чистой прибыли
+          .finances-section__card.swiper-slide
+            span.font-w-l-regular.font-s-28-a.color-g-light.text-up от 1 500 рублей
+            span.font-s-20.color-g-dark Средний чек <br> одного клиента
+          .finances-section__card.swiper-slide
+            span.font-w-l-regular.font-s-28-a.color-g-light.text-up 269 000 рублей
+            span.font-s-20.color-g-dark Ежемесячная <br> чистая прибыль
+        .bullet-pagination.bullet-pagination--right
+      .finances-section__bottom
+        img.finances-section__bottom-img(src="images/finances-section-bottom-img.png" loading="lazy" width="600" height="490" alt="image")
+        .finances-section__bottom-text
+          span.font-w-l-regular.font-s-24-a.text-up
+            | Получите 
+            span.color-g-light подробные 
+            br.no-br
+            span.color-g-light расчеты 
+            | для вашего города 
+            br.no-br
+            | и под ваш бюджет
+          span.font-s-20-b
+            | Скачайте финансовую 
+            br.no-br
+            | модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Скачать
